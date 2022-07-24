@@ -29,7 +29,7 @@ export default function TopStarRepos({ rows }) {
         displayName: 'TopStarRepos',
         render() {
             return (
-                <div>
+                <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
                     <h2>Top Star Repos</h2>
                     <Bar
                         data={data}
