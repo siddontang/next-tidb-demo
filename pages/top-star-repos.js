@@ -5,10 +5,11 @@ Chart.register(CategoryScale, LinearScale, BarElement)
 
 
 function buildData(rows) {
+    rows = rows || [];
     const labels = rows.map(row => row.repo_name)
     const data = rows.map(row => row.events_count)
-    const backgroundColor = rows.map(row => 'rgba(255, 99, 132, 0.2)')
-    const borderColor = rows.map(row => 'rgba(255, 99, 132, 1)')
+    const backgroundColor = rows.map(_ => 'rgba(255, 99, 132, 0.2)')
+    const borderColor = rows.map(_ => 'rgba(255, 99, 132, 1)')
     return {
         labels,
         datasets: [{
