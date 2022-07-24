@@ -13,6 +13,14 @@ export default function Layout({ children }) {
             </main>
 
             <footer className="flex flex-row h-24 w-full gap-4 items-center justify-center border-t">
+                <a className="text-blue-600 flex items-center justify-center gap-2"
+                    href="https://tidb.cloud"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Powered by TiDB Cloud{' '}
+                </a>
+
                 <a className="flex items-center justify-center gap-2"
                     href="https://twitter.com/PingCAP"
                     target="_blank"
